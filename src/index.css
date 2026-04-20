@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: linear-gradient(135deg, #0f172a 0%, #1a1f35 100%);
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #0f172a 0%, #1a1f35 100%);
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+/* ReactQuill Dark Mode Styling */
+.ql-toolbar {
+  background: rgba(30, 41, 59, 0.5) !important;
+  border: 1px solid rgba(59, 130, 246, 0.2) !important;
+  border-bottom: 1px solid rgba(59, 130, 246, 0.3) !important;
+  border-radius: 8px 8px 0 0 !important;
+}
+
+.ql-container {
+  background: rgba(15, 23, 42, 0.5) !important;
+  border: 1px solid rgba(59, 130, 246, 0.2) !important;
+  border-top: none !important;
+  border-radius: 0 0 8px 8px !important;
+  font-size: 16px !important;
+}
+
+.ql-editor {
+  color: #e2e8f0 !important;
+  min-height: 400px;
+  padding: 20px !important;
+}
+
+.ql-editor.ql-blank::before {
+  color: rgba(226, 232, 240, 0.4) !important;
+}
+
+.ql-toolbar.ql-snow .ql-stroke {
+  stroke: rgba(226, 232, 240, 0.6) !important;
+}
+
+.ql-toolbar.ql-snow .ql-fill,
+.ql-toolbar.ql-snow .ql-stroke.ql-fill {
+  fill: rgba(226, 232, 240, 0.6) !important;
+}
+
+.ql-toolbar.ql-snow button:hover .ql-stroke,
+.ql-toolbar.ql-snow button:active .ql-stroke {
+  stroke: #3b82f6 !important;
+}
+
+.ql-toolbar.ql-snow button:hover .ql-fill,
+.ql-toolbar.ql-snow button:active .ql-fill {
+  fill: #3b82f6 !important;
+}
+
+.ql-toolbar.ql-snow button.ql-active .ql-stroke {
+  stroke: #3b82f6 !important;
+}
+
+.ql-toolbar.ql-snow button.ql-active .ql-fill {
+  fill: #3b82f6 !important;
+}
+
+.ql-snow.ql-toolbar button:hover,
+.ql-snow .ql-toolbar button:hover,
+.ql-snow.ql-toolbar button:focus,
+.ql-snow .ql-toolbar button:focus,
+.ql-snow.ql-toolbar button.ql-active,
+.ql-snow .ql-toolbar button.ql-active {
+  color: #3b82f6 !important;
+}
+
+.ql-editor h1, .ql-editor h2, .ql-editor h3 {
+  color: #e2e8f0 !important;
+}
+
+.ql-editor p {
+  color: #e2e8f0 !important;
+}
+
+.ql-editor code {
+  background: rgba(59, 130, 246, 0.1) !important;
+  color: #60a5fa !important;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.ql-editor pre {
+  background: rgba(15, 23, 42, 0.8) !important;
+  border: 1px solid rgba(59, 130, 246, 0.3) !important;
+}
