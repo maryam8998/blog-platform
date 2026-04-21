@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { FiSearch, FiFilter } from 'react-icons/fi';
 import BlogCard from '../components/BlogCard';
-import toast from 'react-hot-toast';
+
 
 export default function Home() {
   const [blogs, setBlogs] = useState([]);
